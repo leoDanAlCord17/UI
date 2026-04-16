@@ -653,6 +653,7 @@ svg.ic {
     <div class="ntab" onclick="filter('asist',this)">Asistencia</div>
     <div class="ntab" onclick="filter('perfil',this)">Perfil</div>
     <div class="ntab" onclick="filter('admin',this)">Admin</div>
+    <div class="ntab" onclick="filter('roles_permisos',this)">Roles y Permisos</div>
   </div>
 
   <!-- ───── SCREENS GRID ───── -->
@@ -793,7 +794,7 @@ svg.ic {
           
           <div style="padding:32px 24px 10px; background:var(--surface); z-index:10;">
             <div style="font-size:22px;font-weight:700;color:var(--text);letter-spacing:-0.5px;">Registro de Datos</div>
-            <div style="font-size:12px;color:var(--text3);margin-top:5px;">Completa tu perfil académico</div>
+            <div style="font-size:12px;color:var(--text3);margin-top:5px;">Paso 2 de 2 . Completa tu perfil académico</div>
           </div>
 
           <div style="flex:1; overflow-y:auto; padding:10px 24px 28px; display:flex; flex-direction:column; gap:16px;" class="scroll-container">
@@ -881,7 +882,6 @@ svg.ic {
               </div>
               <div style="position:relative;">
                 <div class="av av-md av-vi">MG</div>
-                <div class="ndot"></div>
               </div>
             </div>
           </div>
@@ -1036,23 +1036,20 @@ svg.ic {
           <div style="background:var(--surface);padding:14px 16px 12px;flex-shrink:0;">
             <div class="rwb">
               <div>
-                <div style="font-size:11px;color:var(--text3);">Panel del profesor</div>
                 <div style="font-size:17px;font-weight:700;color:var(--text);letter-spacing:-0.4px;margin-top:1px;">Prof. Ramírez</div>
               </div>
               <div class="av av-md av-am">JR</div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text); opacity: 0.8; cursor: pointer;">
+                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"></path>
+                <circle cx="12" cy="12" r="3"></circle>
+              </svg>
             </div>
           </div>
-
-
-          
-
           <div class="scroll" style="gap:10px;">
-
             <div class="card-grad">
               <div style="font-size:9px; font-weight:700; color:rgba(255,255,255,0.55); letter-spacing:0.1em; margin-bottom:12px;">
                 MI CÓDIGO QR PERSONAL
               </div>
-
               <div class="row" style="align-items: center;">
                 <div class="qr-box" style="width:72px; height:72px; background:rgba(255,255,255,0.96); flex-shrink:0;">
                   <svg class="qr-svg-sm" viewBox="0 0 56 56" xmlns="http://www.w3.org/2000/svg">
@@ -1070,7 +1067,6 @@ svg.ic {
                     <rect x="33" y="47" width="6" height="7" rx="1.5" fill="#5B3FD4"/>
                   </svg>
                 </div>
-
                 <div style="flex:1; padding-left:14px; display:flex; flex-direction:column; gap:8px;">
                   <div>
                     <div style="font-size:10px; color:rgba(255,255,255,0.7); font-weight:500;">Rol</div>
@@ -1085,31 +1081,25 @@ svg.ic {
                   </div>
                 </div>
               </div>
-
               <div style="width:100%; margin-top:16px;">
                 <div style="font-size:9px; font-weight:700; color:rgba(255,255,255,0.55); letter-spacing:0.05em; margin-bottom:8px;">Tags secundarios</div>
-                
                 <div style="display:flex; gap:8px; overflow-x:auto; padding-bottom:4px; scrollbar-width:none; -ms-overflow-style:none;">
                   <style>
                     /* Ocultar barra de scroll para limpieza visual */
                     .card-grad ::-webkit-scrollbar { display: none; }
                   </style>
-                  
                   <div style="flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); border-radius:20px; padding:4px 12px;">
                     <div style="width:5px; height:5px; background:#4DF0A0; border-radius:50%;"></div>
                     <span style="font-size:9px; color:#fff; font-weight:600;">Ingeniería</span>
                   </div>
-                  
                   <div style="flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); border-radius:20px; padding:4px 12px;">
                     <div style="width:5px; height:5px; background:#4DF0A0; border-radius:50%;"></div>
                     <span style="font-size:9px; color:#fff; font-weight:600;">Semestre 8</span>
                   </div>
-                  
                   <div style="flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); border-radius:20px; padding:4px 12px;">
                     <div style="width:5px; height:5px; background:#4DF0A0; border-radius:50%;"></div>
                     <span style="font-size:9px; color:#fff; font-weight:600;">Beca</span>
                   </div>
-
                   <div style="flex:0 0 auto; display:inline-flex; align-items:center; gap:5px; background:rgba(255,255,255,0.18); border-radius:20px; padding:4px 12px;">
                     <div style="width:5px; height:5px; background:#4DF0A0; border-radius:50%;"></div>
                     <span style="font-size:9px; color:#fff; font-weight:600;">Mañana</span>
@@ -1600,25 +1590,25 @@ svg.ic {
           <div class="scroll" style="gap:10px;">
 
            <button style="
-    margin-top: 6px;
-    padding: 6px 16px; 
-    font-size: 11px;
-    font-weight: 700;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    background-color: #EF4444; /* Rojo semántico de alerta */
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.02em;
-    transition: all 0.2s ease;
-    box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
-  " 
-  onmouseover="this.style.backgroundColor='#DC2626'; this.style.transform='translateY(-1px)';" 
-  onmouseout="this.style.backgroundColor='#EF4444'; this.style.transform='translateY(0)';"
->
-  Cerrar evento
-</button>
+                  margin-top: 6px;
+                  padding: 6px 16px; 
+                  font-size: 11px;
+                  font-weight: 700;
+                  border-radius: 8px;
+                  border: none;
+                  cursor: pointer;
+                  background-color: #EF4444; /* Rojo semántico de alerta */
+                  color: white;
+                  text-transform: uppercase;
+                  letter-spacing: 0.02em;
+                  transition: all 0.2s ease;
+                  box-shadow: 0 2px 4px rgba(239, 68, 68, 0.2);
+                " 
+                onmouseover="this.style.backgroundColor='#DC2626'; this.style.transform='translateY(-1px)';" 
+                onmouseout="this.style.backgroundColor='#EF4444'; this.style.transform='translateY(0)';"
+              >
+                Cerrar evento
+              </button>
 
             <!-- Stats -->
             <div class="stat-row">
@@ -2354,7 +2344,7 @@ svg.ic {
     <!-- ══════════════════════════════════════
          13. GESTIÓN DE ROLES
     ══════════════════════════════════════ -->
-    <div class="swrap" data-cat="perfil admin">
+    <div class="swrap" data-cat="roles_permisos">
       <div class="phone" style="height:580px;">
         <div class="notch"><div class="notch-pill"></div></div>
         <div class="screen">
@@ -2414,7 +2404,7 @@ svg.ic {
       <div class="screen-label">13 · Gestión de permisos</div>
     </div>
 
-    <div class="swrap" data-cat="perfil admin">
+    <div class="swrap" data-cat="roles_permisos">
       <div class="phone" style="height:580px;">
         <div class="notch"><div class="notch-pill"></div></div>
         <div class="screen">
@@ -2503,7 +2493,7 @@ svg.ic {
       <div class="screen-label">13 · Gestión de roles</div>
     </div>
 
-    <div class="swrap" data-cat="perfil admin">
+    <div class="swrap" data-cat="roles_permisos">
       <div class="phone" style="height:580px;">
         <div class="notch"><div class="notch-pill"></div></div>
         <div class="screen">
@@ -2580,130 +2570,98 @@ svg.ic {
           </div>
         </div>
       </div>
-      <div class="screen-label">13 · Gestión de roles</div>
+      <div class="screen-label">13 · Creacion de roles</div>
     </div>
 
-
-    <!-- ══════════════════════════════════════
-         14. DASHBOARD ADMIN
+     <!-- ══════════════════════════════════════
+         14. ACEPTAR USUARIOS 
     ══════════════════════════════════════ -->
-    <div class="swrap" data-cat="admin">
-      <div class="phone" style="height:660px;">
+
+
+    <div class="swrap" data-cat="perfil admin">
+      <div class="phone" style="height:580px;">
         <div class="notch"><div class="notch-pill"></div></div>
         <div class="screen">
           <div class="sbar"><span>9:41</span><span>●●● 100%</span></div>
-          <div style="background:var(--surface);padding:14px 16px 12px;flex-shrink:0;">
-            <div class="rwb">
-              <div>
-                <div style="font-size:11px;color:var(--text3);">Superadministrador</div>
-                <div style="font-size:17px;font-weight:700;color:var(--text);letter-spacing:-0.4px;margin-top:1px;">Auditoría total</div>
-              </div>
-              <div class="row" style="gap:6px;">
-                <div class="ico-btn" title="Exportar reporte">
-                  <svg class="ic" width="14" height="14" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-                </div>
-                <div class="av av-md av-dk">SA</div>
-              </div>
-            </div>
+          <div class="abar">
+            <div class="ico-btn"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" stroke="var(--text)" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></div>
+            <div class="f1"><div class="abar-title">Gestión de usuarios</div></div>
           </div>
-          <div class="scroll" style="gap:10px;">
-
-            <!-- KPI Grid 2x2 -->
-            <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
-              <div class="card" style="padding:12px;border-left:3px solid var(--accent);">
-                <div style="font-size:9px;color:var(--text3);font-weight:600;margin-bottom:4px;">EVENTOS HOY</div>
-                <div style="font-size:26px;font-weight:700;color:var(--text);letter-spacing:-1px;line-height:1;">12</div>
-                <div style="font-size:10px;color:var(--green);font-weight:600;margin-top:4px;">↑ 3 vs ayer</div>
-              </div>
-              <div class="card" style="padding:12px;border-left:3px solid var(--green);">
-                <div style="font-size:9px;color:var(--text3);font-weight:600;margin-bottom:4px;">ASISTENCIAS HOY</div>
-                <div style="font-size:26px;font-weight:700;color:var(--green);letter-spacing:-1px;line-height:1;">284</div>
-                <div style="font-size:10px;color:var(--green);font-weight:600;margin-top:4px;">↑ 12% hoy</div>
-              </div>
-              <div class="card" style="padding:12px;border-left:3px solid var(--teal);">
-                <div style="font-size:9px;color:var(--text3);font-weight:600;margin-bottom:4px;">TASA GLOBAL 30d</div>
-                <div style="font-size:26px;font-weight:700;color:var(--teal);letter-spacing:-1px;line-height:1;">78%</div>
-                <div class="pbg" style="margin-top:6px;"><div class="pf" style="width:78%;background:var(--teal);"></div></div>
-              </div>
-              <div class="card" style="padding:12px;border-left:3px solid var(--amber);">
-                <div style="font-size:9px;color:var(--text3);font-weight:600;margin-bottom:4px;">USUARIOS ACTIVOS</div>
-                <div style="font-size:26px;font-weight:700;color:var(--text);letter-spacing:-1px;line-height:1;">471</div>
-                <div style="font-size:10px;color:var(--text3);font-weight:500;margin-top:4px;">412 est · 34 prof</div>
-              </div>
+          <div class="scroll" style="gap:12px;">
+            <div class="srch">
+              <svg class="ic" width="14" height="14" viewBox="0 0 24 24" stroke="var(--text3)" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+              <input placeholder="Buscar usuarios..." readonly/>
             </div>
+            <div class="sec-lbl">Usuarios pendientes</div>
+            <div style="display:flex;flex-direction:column;gap:6px;">
+            
+              
 
-            <!-- Gráfica de barras -->
-            <div class="card">
-              <div class="rwb" style="margin-bottom:12px;">
-                <span style="font-size:12px;font-weight:700;">Asistencia semanal</span>
-                <span style="font-size:10px;color:var(--accent);font-weight:600;">Ver detalle →</span>
-              </div>
-              <div style="display:flex;align-items:flex-end;gap:6px;height:65px;">
-                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;"><div style="width:100%;border-radius:6px 6px 0 0;background:var(--accent-m);height:70%;"></div><div style="font-size:9px;color:var(--text3);font-weight:600;">L</div></div>
-                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;"><div style="width:100%;border-radius:6px 6px 0 0;background:var(--accent-m);height:88%;"></div><div style="font-size:9px;color:var(--text3);font-weight:600;">M</div></div>
-                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;"><div style="width:100%;border-radius:6px 6px 0 0;background:var(--grad);height:62%;"></div><div style="font-size:9px;color:var(--accent);font-weight:700;">X</div></div>
-                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;"><div style="width:100%;border-radius:6px 6px 0 0;background:var(--surf3);height:45%;"></div><div style="font-size:9px;color:var(--text3);font-weight:600;">J</div></div>
-                <div style="display:flex;flex-direction:column;align-items:center;gap:4px;flex:1;"><div style="width:100%;border-radius:6px 6px 0 0;background:var(--surf3);height:30%;"></div><div style="font-size:9px;color:var(--text3);font-weight:600;">V</div></div>
-              </div>
-            </div>
-
-            <!-- Alertas de ausentismo -->
-            <div>
-              <div class="sec-lbl" style="margin-bottom:8px;">⚠ Alertas de ausentismo</div>
-              <div style="display:flex;flex-direction:column;gap:5px;">
-                <div class="card-sm" style="border-left:3px solid var(--red);">
-                  <div class="rwb">
+              <div class="card-sm">
+                <div class="rwb" style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 16px;">
+                  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
                     <div>
-                      <div style="font-size:12px;font-weight:700;color:var(--red);">Cálculo IV — Sección B</div>
-                      <div style="font-size:10px;color:var(--text3);margin-top:2px;">Prof. Torres · 38% asistencia este mes</div>
+                      <div style="font-size:10px; color:var(--text3); text-transform: uppercase;">Nombres</div>
+                      <div style="font-size:12px; font-weight:700;">Leo Daniel</div>
                     </div>
-                    <div style="font-size:15px;font-weight:700;color:var(--red);">38%</div>
+                    <div>
+                      <div style="font-size:10px; color:var(--text3); text-transform: uppercase;">Apellidos</div>
+                      <div style="font-size:12px; font-weight:700;">Alvarez Cordero</div>
+                    </div>
                   </div>
-                  <div class="pbg" style="margin-top:6px;"><div class="pf" style="width:38%;background:var(--red);"></div></div>
+
+                  <div style="border-top: 1px solid rgba(0,0,0,0.05); padding-top: 8px;">
+                    <div style="font-size:12px; font-weight:700;"><span style="color:var(--text3); font-weight:400;">Cedula:</span> 123456789</div>
+                    <div style="font-size:12px; font-weight:700;"><span style="color:var(--text3); font-weight:400;">Email:</span> leo.alvarez@example.com</div>
+                    <div style="font-size:12px; font-weight:700;"><span style="color:var(--text3); font-weight:400;">Telf:</span> 555-1234</div>
+                  </div>
                 </div>
-                <div class="card-sm" style="border-left:3px solid var(--amber);">
-                  <div class="rwb">
-                    <div>
-                      <div style="font-size:12px;font-weight:700;color:var(--amber);">Inglés Técnico</div>
-                      <div style="font-size:10px;color:var(--text3);margin-top:2px;">Prof. Medina · 52% asistencia</div>
+
+                <div style="margin-bottom: 12px;">
+                  <div style="font-size:10px; color:var(--text3); margin-bottom: 4px;">Defina los Roles para este usuario</div>
+                  <div class="inp-wrap" style="position:relative;">
+                    <div class="inp-lbl">Rol de usuario</div>
+                    <div id="select-display" class="inp" style="height:auto; min-height:40px; display:flex; flex-wrap:wrap; gap:6px; padding:8px 12px; align-items:center; cursor:pointer;">
+                      <span id="placeholder-text" style="color:rgba(0,0,0,0.4); font-size:13px;">Selecciona categorías...</span>
                     </div>
-                    <div style="font-size:15px;font-weight:700;color:var(--amber);">52%</div>
                   </div>
-                  <div class="pbg" style="margin-top:6px;"><div class="pf" style="width:52%;background:var(--amber);"></div></div>
+                </div>
+
+                <div style="margin-bottom: 16px;">
+                  <div style="font-size:10px; color:var(--text3); margin-bottom: 4px;">Defina los Tags para este usuario</div>
+                  <div style="display: flex; flex-direction: column; gap: 8px;">
+                    <div class="inp-wrap" style="position:relative; margin-bottom:0;">
+                      <div class="inp-lbl">Tag Principal</div>
+                      <div class="inp" style="height:auto; min-height:40px; display:flex; align-items:center; padding:0 12px; cursor:pointer;">
+                        <span style="color:rgba(0,0,0,0.4); font-size:13px;">Selecciona...</span>
+                      </div>
+                    </div>
+                    <div class="inp-wrap" style="position:relative; margin-bottom:0;">
+                      <div class="inp-lbl">Tags secundarios</div>
+                      <div class="inp" style="height:auto; min-height:40px; display:flex; align-items:center; padding:0 12px; cursor:pointer;">
+                        <span style="color:rgba(0,0,0,0.4); font-size:13px;">Selecciona categorías...</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div style="display:flex; gap:8px; margin-top: 16px;">
+                  <button class="btn-sm" style="flex:1; text-align:center; background: #fdeded; color: #e53935; border: 1px solid #ffcdd2; font-weight: 600;">Declinar usuario</button>
+                  <button class="btn-sm bsm-p" style="flex:1; text-align:center;">Aceptar usuario</button>
                 </div>
               </div>
+
             </div>
-
-            <!-- Top eventos -->
-            <div class="sec-lbl">Mejor asistencia hoy</div>
-            <div style="display:flex;flex-direction:column;gap:5px;">
-              <div class="card-sm">
-                <div class="rwb" style="margin-bottom:5px;"><div><div style="font-size:12px;font-weight:600;">Acto de Grado</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">Hoy · 09:00 · 150 esperados</div></div><div style="font-size:15px;font-weight:700;color:var(--green);">98%</div></div>
-                <div class="pbg"><div class="pf" style="width:98%;background:var(--green);"></div></div>
-              </div>
-              <div class="card-sm">
-                <div class="rwb" style="margin-bottom:5px;"><div><div style="font-size:12px;font-weight:600;">Seminario IA</div><div style="font-size:10px;color:var(--text3);margin-top:2px;">Jue 3 abr · 80 esperados</div></div><div style="font-size:15px;font-weight:700;color:var(--accent);">87%</div></div>
-                <div class="pbg"><div class="pf" style="width:87%;background:var(--accent);"></div></div>
-              </div>
-            </div>
-
-            <button class="btn btn-primary" style="display:flex;align-items:center;justify-content:center;gap:7px;font-size:12px;">
-              <svg class="ic" width="14" height="14" viewBox="0 0 24 24" stroke="#fff" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-              Exportar reporte completo
-            </button>
-
-          </div>
-          <div class="bnav">
-            <div class="ni"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" stroke="var(--accent)" stroke-width="2.2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg><div class="ni-lbl on">Panel</div></div>
-            <div class="ni"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" stroke="var(--text3)" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/></svg><div class="ni-lbl">Eventos</div></div>
-            <div class="ni"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" stroke="var(--text3)" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg><div class="ni-lbl">Usuarios</div></div>
-            <div class="ni"><svg class="ic" width="18" height="18" viewBox="0 0 24 24" stroke="var(--text3)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><div class="ni-lbl">Reportes</div></div>
           </div>
         </div>
       </div>
-      <div class="screen-label">14 · Dashboard admin<em>Alertas ausentismo · Exportar reporte</em></div>
+      <div class="screen-label">13 · Aceptar usuarios</div>
     </div>
 
+    <!-- ══════════════════════════════════════
+         14. ADMIN
+    ══════════════════════════════════════ -->
+   
 
     <!-- ══════════════════════════════════════
          15. HISTORIAL DEL ESTUDIANTE
