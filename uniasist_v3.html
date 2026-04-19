@@ -1059,7 +1059,7 @@ svg.ic {
               </div>
           </div>
           <div class="scroll" style="gap:10px;">
-            
+
             <div class="card-grad">
               <div style="font-size:9px; font-weight:700; color:rgba(255,255,255,0.55); letter-spacing:0.1em; margin-bottom:12px;">
                 MI CÓDIGO QR PERSONAL
@@ -1204,8 +1204,27 @@ svg.ic {
         <div class="screen">
           <div class="sbar"><span>9:41</span><span>●●● 100%</span></div>
           <div class="abar">
-            <div class="f1"><div class="abar-title">Mis eventos</div><div class="abar-sub">Miércoles 2 abr</div></div>
-            <div class="ico-btn accent"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></div>
+            <div class="f1">
+              <div class="abar-title">Mis eventos</div>
+              <div class="abar-sub">Miércoles 2 abr</div>
+            </div>
+
+            <div class="ico-btn" style="margin-right: 8px;">
+              <svg class="ic" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                <polyline points="14 2 14 8 20 8"></polyline>
+                <line x1="16" y1="13" x2="8" y2="13"></line>
+                <line x1="16" y1="17" x2="8" y2="17"></line>
+                <polyline points="10 9 9 9 8 9"></polyline>
+              </svg>
+            </div>
+
+            <div class="ico-btn accent">
+              <svg class="ic" width="15" height="15" viewBox="0 0 24 24" stroke="#fff" stroke-width="2.2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+            </div>
           </div>
           <div class="scroll" style="gap:10px;">
 
@@ -1311,7 +1330,7 @@ svg.ic {
           <div class="abar">
             <div class="ico-btn"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" stroke="var(--text)" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></div>
             <div class="f1"><div class="abar-title">Nuevo evento</div></div>
-            <div style="font-size:12px;color:var(--accent);font-weight:700;">Guardar</div>
+      
           </div>
           <div class="scroll" style="gap:10px;">
         
@@ -1572,6 +1591,63 @@ svg.ic {
       </div>
       <div class="screen-label">5 · Crear evento<em>Plantillas · 4 modos · Control salida</em></div>
     </div>
+
+
+    <!-- ══════════════════════════════════════
+         6. BORRADOR DE EVENTOS
+    ══════════════════════════════════════ -->
+
+    <div class="swrap" data-cat="evento">
+      <div class="phone" style="height:610px;">
+        <div class="notch"><div class="notch-pill"></div></div>
+        <div class="screen">
+          <div class="sbar"><span>9:41</span><span>●●● 100%</span></div>
+          <div class="abar">
+            <div class="ico-btn"><svg class="ic" width="15" height="15" viewBox="0 0 24 24" stroke="var(--text)" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></div>
+            <div class="f1"><div class="abar-title">Borrador de evento</div></div>
+      
+          </div>
+          <div class="scroll" style="gap:10px;">
+
+            <div class="srch" style="display: flex; align-items: center; justify-content: space-between; gap: 8px;">
+              <div style="display: flex; align-items: center; gap: 8px; flex-grow: 1;">
+                <svg class="ic" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+                <input placeholder="Buscar evento..." readonly style="border: none; outline: none; background: transparent; width: 100%;"/>
+              </div>
+              
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--text3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+              </svg>
+            </div>
+
+            <div class="card-sm">
+  <div class="rwb" style="display: flex; align-items: center; justify-content: space-between; gap: 10px;">
+    <div>
+      <div style="font-size:12px; font-weight:700;">Reunion de Profesores</div>
+      <div style="font-size:10px;color:var(--text3);margin-top:2px;">Martes 07/12 . 08:03 → 10:01</div>
+      <div style="font-size:10px; color:var(--text3); margin-top:2px;">Planificacion de la graduacion de los estudiantes de Setaven y Iunav </div>
+    </div>
+  </div>
+  
+  <br>
+
+  <div style="display: flex; gap: 12px; align-items: center;">
+    <button class="btn btn-ghost" style="font-size:12px;">Detalles del evento</button>
+    <button class="btn btn-primary">Publicar evento</button>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </div>
+      <div class="screen-label">5 · Crear evento<em>Plantillas · 4 modos · Control salida</em></div>
+    </div>
+
 
 
     <!-- ══════════════════════════════════════
